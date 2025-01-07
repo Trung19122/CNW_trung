@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+                "header header"
+                "nav section"
+                "footer footer";
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8e0;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #cfe2d4;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #dbe7ce;
+            padding: 10px;
+            border-right: 2px solid black;
+        }
+
+        section {
+            grid-area: section;
+            background-color: #eaf2d3;
+            padding: 10px;
+            border-left: 2px solid black;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #cfe2d4;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <nav>
+        Navigation
+    </nav>
+    <section>
+        Section
+    </section>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
