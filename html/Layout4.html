@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+                "title title"
+                "header header"
+                "nav section "
+                "footer footer";
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+        }
+        h1 {
+            grid-area: title;
+            text-align: left;
+            margin: 0;
+            padding: 10px;
+            background-color: #fafafa;
+            font-size: 15px;
+            
+        }
+        header {
+            grid-area: header;
+            background-color: rgb(48, 121, 210) ;
+            text-align: left;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color:  rgb(48, 121, 210);
+            padding: 10px;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        section {
+            grid-area: section;
+            background-color:  rgb(48, 121, 210);
+            padding: 10px;
+            border-right: 2px solid black;
+            
+        }
+        article {
+            background-color: #ffe4c4;
+            padding: 130px;
+            text-align: left;
+            width: 72%;
+            border: 2px solid black;
+        }
+        footer {
+            grid-area: footer;
+            background-color:  rgb(48, 121, 210);
+            text-align: left;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout 4.</h1>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section>
+        Section
+        <article>Article</article>
+    </section>
+    <footer>Footer</footer>
+</body>
+</html>
